@@ -93,6 +93,7 @@ display: block;
 .header-logo {
   color: var(--iris);
   margin-right: 76px;
+  transition: 250ms, cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header-logo-studio {
@@ -115,7 +116,6 @@ display: block;
   display: block;
   position: relative; 
   color: #404bbf;
-  transition: 250ms,  cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header-adress {
