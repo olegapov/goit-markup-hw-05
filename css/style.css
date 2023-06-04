@@ -93,7 +93,7 @@ display: block;
 .header-logo {
   color: var(--iris);
   margin-right: 76px;
-  transition: 250ms, cubic-bezier(0.4, 0, 0.2, 1);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header-logo-studio {
@@ -597,6 +597,9 @@ gap: 24px;
 
 .portfolio-link {
   display: block;
+  box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1); 
+  
 }
 
 .portfolio-link:hover {
