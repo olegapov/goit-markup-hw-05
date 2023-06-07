@@ -213,7 +213,8 @@ color: var(--ocean);
   margin: auto;
   border: none;
   margin-top: 48px;
-}
+  /* transition: (0.4, 0, 0.2, 1); */
+ }
 
 .hero-btn-title {
   font-family: "Roboto", sans-serif;
@@ -652,6 +653,8 @@ box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.1
   height: 100%;
   border-color: gray;
   top: 0;
+  transition: opacity 250ms linear, visibility 250ms linear;  
+  background-color: rgba(46, 47, 66, 0.4);
 }
 
 .modal {
@@ -661,9 +664,11 @@ box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.1
   transform: translate(-50%, -50%);
   width: 408px;
   min-height: 584px;
-background-color: #FFFFFF;
-border-radius: 4px;
-padding: 24px;
+  background-color: #FFFFFF;
+  border-radius: 4px;
+  padding: 24px;
+  background: #fcfcfc;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
 .modal-close {
@@ -671,13 +676,22 @@ padding: 24px;
   height: 24px;
   border: 1px solid #999999;
   border-radius: 50%;
- display: block;
- margin-left: auto;
-
+  display: block;
+  margin-left: auto;
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #e7e9fc;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 0;
+  cursor: pointer;
 }
 
 .is-hidden {
-  visibility: none;
+  visibility: hidden;
   opacity: 0;
   pointer-events: none;
 }
