@@ -146,6 +146,13 @@ bottom: -1px;
 height: 4px;
 background-color: #404bbf;
 border-radius: 2px;
+
+  opacity: 0;
+  width: 100%;
+  height: 4px;
+  border-radius: 2px;
+  background-color: var(--ocean);
+
 }
 .header-adress-contact:hover {
   color: var(--ocean);
@@ -176,6 +183,17 @@ color: var(--ocean);
   gap: 40px;
 }
 
+.header-item-link:is(:hover, :focus),
+.header-item-link.current {
+   color: var(--ocean);
+}
+
+.header-item-link:hover::after,
+.header-item-link:focus::after,
+.header-item-link.current::after {
+   opacity: 1;
+   background-origin: -1px;
+}
 
 /** ------HERO----- **/
 
