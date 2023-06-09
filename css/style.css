@@ -146,9 +146,7 @@ bottom: -1px;
 height: 4px;
 background-color: #404bbf;
 border-radius: 2px;
-
 }
-
 .header-adress-contact:hover {
   color: var(--ocean);
  }
@@ -177,6 +175,7 @@ color: var(--ocean);
   display: flex;
   gap: 40px;
 }
+
 
 /** ------HERO----- **/
 
